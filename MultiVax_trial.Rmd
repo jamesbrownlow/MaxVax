@@ -8,8 +8,7 @@ output: html_document
 ```{r setup, include=FALSE}
 require(tidyverse)
 require(tigerstats)
-#source("fisherXY.R")
-
+source("fisherXY.R")
 myData = read.csv('clinicalTrial.csv')
 ```
 # Results comparing different groups with varying vaccine treatments for effectiveness
