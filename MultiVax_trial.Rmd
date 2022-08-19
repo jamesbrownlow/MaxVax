@@ -1,8 +1,12 @@
 ---
 title: "MultiVax Clinical trial"
-author: "Your Name"
-date: '2022-07-02'
-output: html_document
+author: "Your Name Here"
+output: 
+  html_document:
+    number_sections: true
+    toc: true
+    toc_depth: 5
+date: "`r Sys.Date()`"    
 ---
 
 ```{r setup, include=FALSE}
@@ -11,4 +15,7 @@ require(tigerstats)
 source("fisherXY.R")
 myData = read.csv('clinicalTrial.csv')
 ```
+
 # Results comparing different groups with varying vaccine treatments for effectiveness
+
+The data is in the file "clinicalTrial.csv" locally referred to as myData.  Compare the various treatment groups against each other for their efficacy against the latest covid variant.
