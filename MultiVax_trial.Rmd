@@ -13,9 +13,35 @@ date: "`r Sys.Date()`"
 require(tidyverse)
 require(tigerstats)
 source("fisherXY.R")
-myData = read.csv('clinicalTrial.csv')
 ```
 
-# Results comparing different groups with varying vaccine treatments for effectiveness
+Evaluate the effectiveness of a new Covid19 vaccine, MultiVax. 
 
 The data is in the file "clinicalTrial.csv" locally referred to as myData.  Compare the various treatment groups against each other for their efficacy against the latest covid variant.
+
+```{r}
+myData = read.csv('clinicalTrial.csv')
+myData <- as.data.frame(unclass(myData), stringsAsFactors = TRUE)
+summary.data.frame(myData)
+```
+# Introduction
+<!--   Describe the problem, state the question to be addressed, formulate the null and alternative hypotheses !-->
+
+$H_0:$  
+$H_A:$
+
+
+# Methods
+<!--    look at the data.. what type of analysis is appropriate?  !-->
+
+# Descriptive results
+
+## Graphical Description
+
+## Numerical Description
+
+# Inferential Results
+<!--   set up the inferential test, interpret results !-->
+
+# Discussion and Conclusion
+<!-- Restate the question, based on inferential results, answer the question !-->
