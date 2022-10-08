@@ -14,7 +14,7 @@ require(tidyverse)
 require(tigerstats)
 source("fisherXY.R")
 ```
-
+  
 Evaluate the effectiveness of a new Covid19 vaccine, MultiVax. 
 
 The data is in the file "clinicalTrial.csv" locally referred to as myData.  Compare the various treatment groups against each other for their efficacy against the latest covid variant.
